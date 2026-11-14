@@ -1,5 +1,5 @@
     
-# ROVER ESPACIAL 
+# Rover Espacial 
 <img 
     align="left" 
     alt="C++" 
@@ -26,9 +26,7 @@ TECNOLOGIAS UTILIZADAS
 
 ---
 
-LASER
-
-Código de validação para ligações do laser
+LASER | Código de validação para ligações do laser
 
 ```const byte PINO_LASER = 2;
 
@@ -44,6 +42,41 @@ void loop() {
   delay(1000);
 }
 ```
+MOTOR | O microcontrolador vai ler as instruções constantemente
+
+```const byte IN1 = 4;
+const byte IN2 = 5;
+const byte IN3 = 11;
+const byte IN4 = 12;
+
+void pararMotores() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}
+
+void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+  pararMotores();
+}
+
+void loop() {
+  // Sequência com o movimento para frente.
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  delay(2000);
+
+  pararMotores();
+  delay(2000);
+}
+```
+
 
 
 
