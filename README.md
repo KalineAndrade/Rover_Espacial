@@ -1,4 +1,4 @@
-#      
+    
 <img 
     align="left" 
     alt="C++" 
@@ -6,11 +6,11 @@
     width="30px" 
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" 
-/> Rover Espacial 
+/> # Rover Espacial 
 
 Protótipo de Rover Espacial, foi desenvolvido em um projeto acadêmico de robótica. O veículo tinha sua estrutura fabricada por impressão 3D e era controlado por um aplicativo de celular via Bluetooth. Entre as funções estão a movimentação por motores DC, o acionamento de laser, o direcionamento por servomotor e um sensor LDR.
 
-# Tecnologias utilizadas
+TECNOLOGIAS UTILIZADAS
 
 - Arduino Nano
 - Arduino IDE / linguagem Arduino baseada em C++
