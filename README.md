@@ -23,6 +23,25 @@ TECNOLOGIAS UTILIZADAS
 - Servomotor, motores DC com ponte H, laser e sensor LDR
 - Estrutura fabricada por impressão 3D
 
+---
+
+LASER
+Código de validação para ligações do laser
+
+```const byte PINO_LASER = 2;
+
+void setup() {
+  pinMode(PINO_LASER, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(PINO_LASER, HIGH);
+  delay(1000);
+
+  digitalWrite(PINO_LASER, LOW);
+  delay(1000);
+}
+```
 
 
 
