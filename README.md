@@ -28,7 +28,8 @@ TECNOLOGIAS UTILIZADAS
 
 LASER | Código de validação para ligações do laser
 
-```const byte PINO_LASER = 2;
+```
+const byte PINO_LASER = 2;
 
 void setup() {
   pinMode(PINO_LASER, OUTPUT);
@@ -44,7 +45,8 @@ void loop() {
 ```
 MOTOR | O microcontrolador vai ler as instruções constantemente
 
-```const byte IN1 = 4;
+```
+const byte IN1 = 4;
 const byte IN2 = 5;
 const byte IN3 = 11;
 const byte IN4 = 12;
