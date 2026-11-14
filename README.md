@@ -78,6 +78,70 @@ void loop() {
   delay(2000);
 }
 ```
+TESTE LDR | Código de validação para ligações do sensor LDR
+
+```
+const byte PINO_LDR = A2;
+const byte PINO_SAIDA = 4;
+const byte PINO_LASER = 2;
+
+int sensorLDR = 0;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(PINO_SAIDA, OUTPUT);
+  pinMode(PINO_LASER, OUTPUT);
+}
+
+void loop() {
+  sensorLDR = analogRead(PINO_LDR);
+
+  Serial.print("Valor = ");
+  Serial.println(sensorLDR);
+
+  // Controle do pino 4
+  if (sensorLDR >= 995) {
+    digitalWrite(PINO_SAIDA, LOW);
+    delay(500);
+  }
+
+  else if (sensorLDR <= 10) {
+    digitalWrite(PINO_SAIDA, HIGH);
+    delay(5000);
+  }
+
+  // Controle do pino 2
+  if (sensorLDR <= 400) { 
+    digitalWrite(PINO_LASER, HIGH);
+  } 
+
+  if (sensorLDR >= 401) {
+    digitalWrite(PINO_LASER, LOW);
+  }
+}
+```
+Servo Motor | Código para embarcar no arduíno para controlar as posições do servo motor
+
+```
+#include <Servo.h>
+
+Servo mira;
+int angulo = 90;
+
+void setup() {
+  mira.attach(9);
+}
+
+void loop() {
+  mira.write(70);
+  delay(1000);
+
+  mira.write(100);
+  delay(1000);
+}
+```
+
 
 
 
