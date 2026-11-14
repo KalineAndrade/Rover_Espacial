@@ -121,7 +121,7 @@ void loop() {
   }
 }
 ```
-Servo Motor | Código para embarcar no arduíno para controlar as posições do servo motor
+SERVO MOTOR | Código para embarcar no Arduino para controlar as posições do servo motor
 
 ```
 #include <Servo.h>
